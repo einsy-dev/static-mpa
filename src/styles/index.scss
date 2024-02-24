@@ -1,6 +1,7 @@
 @use "components/offcanvas";
 @use "components/header";
 @use "font-faces";
+@import "variables";
 
 *,
 *::before,
@@ -17,4 +18,9 @@
 body {
   font-family: "Open Sans", Arial, sans-serif;
   transition: 0.5s;
+  height: 100%;
+  width: 100%;
+}
+main {
+  min-height: 95vh;
 }
