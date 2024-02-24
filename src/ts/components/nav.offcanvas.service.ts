@@ -19,5 +19,7 @@ swipeEvent(main, swipeHandler);
 function swipeHandler(right: boolean) {
   if (right) {
     offcanvas.setAttribute("style", "width: 250px");
+  } else {
+    offcanvas.removeAttribute("style");
   }
 }
