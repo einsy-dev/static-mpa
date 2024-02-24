@@ -33,17 +33,11 @@ themeBtn.addEventListener("click", () => {
 
 const offcanvas = document.getElementById("offcanvas");
 const offcanvasBtn = document.getElementById("burger-btn");
+
 offcanvasBtn.addEventListener("click", (e) => {
-  if (offcanvas.hasAttribute("style")) {
-    offcanvasHandler(false);
-    return;
-  }
-  offcanvasHandler();
-});
-function offcanvasHandler(open = true) {
-  if (open) {
+  if (!offcanvas.hasAttribute("style")) {
     offcanvas.setAttribute("style", "width: 250px");
   } else {
     offcanvas.removeAttribute("style");
   }
-}
+});

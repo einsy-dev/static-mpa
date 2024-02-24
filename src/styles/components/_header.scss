@@ -1,0 +1,31 @@
+header {
+  padding: 10px 10%;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(25, 25, 250),
+    rgba(100, 50, 250, 1)
+  );
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    .header-btn {
+      display: inherit;
+      align-items: center;
+    }
+    .theme-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .theme-icon:hover {
+      cursor: pointer;
+    }
+    .burger-menu-icon {
+      width: 25px;
+      height: 25px;
+    }
+    .burger-menu-icon:hover {
+      cursor: pointer;
+    }
+  }
+}
