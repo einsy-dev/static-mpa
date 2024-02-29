@@ -1,13 +1,17 @@
-header {
+#header {
   position: fixed;
-  padding: 10px 10%;
+  z-index: 1;
   width: 100%;
+  overflow: hidden;
+  height: 45px;
+  transition: 0.3s;
   background-image: linear-gradient(
     to bottom,
     rgb(25, 25, 250),
     rgba(100, 50, 250, 1)
   );
   .header-nav {
+    margin: 10px 10%;
     display: flex;
     justify-content: space-between;
     .header-btn {

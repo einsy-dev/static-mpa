@@ -4,5 +4,6 @@ const main = document.getElementById("main");
 const themeUseIcon = document.getElementById("theme-use-icon");
 const offcanvas = document.getElementById("offcanvas");
 const offcanvasBtn = document.getElementById("burger-btn");
+const header = document.getElementById("header");
 
-export { themeBtn, root, main, themeUseIcon, offcanvas, offcanvasBtn };
+export { themeBtn, root, main, themeUseIcon, offcanvas, offcanvasBtn, header };

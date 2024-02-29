@@ -25,10 +25,10 @@ export default function swipeEvent(el: any, callback: any, ignoreValue = 100) {
         : (ignore = startY - endY > -ignoreValue);
 
       if (!ignore) return;
-      if (endX < startX) {
+      if (endX < startX && startX - endX > 25) {
         callback(false);
       }
-      if (endX > startX) {
+      if (endX > startX && endX - startX > 25) {
         callback(true);
       }
     },
